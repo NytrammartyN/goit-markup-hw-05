@@ -15,237 +15,283 @@
     <!--Fonts end-->
 
     <!--Normalize start-->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
     <!--normalize end-->
 
     <link rel="stylesheet" href="./css/style.css" />
-  
-
   </head>
   <body class="body">
-   <!--Header SECT-->
-  <header class="header">
-    <div class="container nav_flex">
-      <nav class="header_nav">
-        <a class="logo_WebStudio link" lang="en" href="./index.html"
-          >Web<span class="logo-accent">Studio</span></a
-        >
+    <!--Header SECT-->
+    <header class="header">
+      <div class="container nav_flex">
+        <nav class="header_nav">
+          <a class="logo_WebStudio link" lang="en" href="./index.html"
+            >Web<span class="logo-accent">Studio</span></a
+          >
 
-        <ul class="header_list_nav list">
-          <li class="header_nav_item">
-            <a class="header_nav_link link" href="index.html">Студия</a>
+          <ul class="header_list_nav list">
+            <li class="header_nav_item">
+              <a class="header_nav_link link" href="index.html">Студия</a>
+            </li>
+            <li class="header_nav_item">
+              <a class="header_nav_link link current" href="portfolio.html"
+                >Портфолио</a
+              >
+            </li>
+            <li class="header_nav_item">
+              <a class="header_nav_link link" href="#contacts">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+
+        <ul class="header_list_contacts list">
+          <li class="header_contact_item">
+            <a class="header_contact_link link" href="mailto:info@devstudio.com"
+              ><svg class="contact_icon" width="16" height="12">
+                <use href="./images/icons.svg#mail"></use></svg
+              >info@devstudio.com</a
+            >
           </li>
-          <li class="header_nav_item">
-            <a class="header_nav_link link current" href="portfolio.html">Портфолио</a>
-          </li>
-          <li class="header_nav_item">
-            <a class="header_nav_link link" href="#contacts">Контакты</a>
+          <li class="header_contact_item">
+            <a class="header_contact_link link" href="tel:+380961111111"
+              ><svg class="contact_icon" width="10" height="16">
+                <use href="./images/icons.svg#tel"></use></svg
+              >+38 096 111 11 11</a
+            >
           </li>
         </ul>
-      </nav>
-
-      <ul class="header_list_contacts list">
-        <li class="header_contact_item">
-          <a class="header_contact_link link" href="mailto:info@devstudio.com"
-            ><svg class="contact_icon" width="16" height="12">
-              <use href="./images/icons.svg#mail"></use>
-            </svg>info@devstudio.com</a
-          >
-        </li>
-        <li class="header_contact_item">
-          <a class="header_contact_link link" href="tel:+380961111111"
-            ><svg class="contact_icon" width="10" height="16">
-              <use href="./images/icons.svg#tel"></use>
-            </svg>+38 096 111 11 11</a
-          >
-        </li>
-      </ul>
-    </div>
-  </header>
+      </div>
+    </header>
     <!--Мain SECT portfolio-->
     <main>
       <section class="portfolio_section">
         <div class="container">
           <h1 class="visually-hidden">top_bttn</h1>
-            <ul class="Portfolio_bttns list">
-              <li class="portfolio_bttn_item">
-                <button class="bttns" type="button">Все</button></li>
-              <li class="portfolio_bttn_item">
-                <button class="bttns" type="button">Веб-сайты</button></li>
-              <li class="portfolio_bttn_item">
-                <button  class="bttns" type="button">Приложения</button></li>
-              <li class="portfolio_bttn_item">
-                <button  class="bttns" type="button">Дизайн</button></li>
-              <li class="portfolio_bttn_item">
-                <button  class="bttns" type="button">Маркетинг</button></li>
-          
+          <ul class="Portfolio_bttns list">
+            <li class="portfolio_bttn_item">
+              <button class="bttns" type="button">Все</button>
+            </li>
+            <li class="portfolio_bttn_item">
+              <button class="bttns" type="button">Веб-сайты</button>
+            </li>
+            <li class="portfolio_bttn_item">
+              <button class="bttns" type="button">Приложения</button>
+            </li>
+            <li class="portfolio_bttn_item">
+              <button class="bttns" type="button">Дизайн</button>
+            </li>
+            <li class="portfolio_bttn_item">
+              <button class="bttns" type="button">Маркетинг</button>
+            </li>
           </ul>
         </div>
-        <div class="container"> 
+        <div class="container">
           <ul class="our_project_list list">
-                <li class="our_project_item">
-                  <div class="our_project_description">
-                    <img
-                    src="images/img10.jpg"
-                    alt="технокряк"
-                    width="370"
-                    height="294"
-                  />
-                  <div class="our_project_overlay">
-                  <p class="our_project_description_text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+            <li class="our_project_item">
+              <div class="our_project_description">
+                <img
+                  src="images/img10.jpg"
+                  alt="технокряк"
+                  width="370"
+                  height="294"
+                />
+                <div class="our_project_overlay">
+                  <p class="our_project_description_text">
+                    Ресурс предлагает комплексные предложения с разным уровнем
+                    функционала и сервисов. Все это позволит посетителю получить
+                    исчерпывающие сведения о компании или частном лице.
+                  </p>
                 </div>
-                </div>
-                  <div class="our_project_border">
-                    <h2 class="our_project_title">Технокряк</h2>
-                    <p class="our_project_text">Веб-сайт</p>
-                  </div>
-                </li>
+              </div>
+              <div class="our_project_border">
+                <h2 class="our_project_title">Технокряк</h2>
+                <p class="our_project_text">Веб-сайт</p>
+              </div>
+            </li>
 
-                <li class="our_project_item">
-                  <div class="our_project_description">
-                  <img
-                    src="images/img-2.jpg"
-                    alt="Постер New Orlean vs Golden State"
-                    width="370"
-                    height="294"/>
-                  <div class="our_project_overlay">
-                  <p class="our_project_description_text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+            <li class="our_project_item">
+              <div class="our_project_description">
+                <img
+                  src="images/img-2.jpg"
+                  alt="Постер New Orlean vs Golden State"
+                  width="370"
+                  height="294"
+                />
+                <div class="our_project_overlay">
+                  <p class="our_project_description_text">
+                    Ресурс предлагает комплексные предложения с разным уровнем
+                    функционала и сервисов. Все это позволит посетителю получить
+                    исчерпывающие сведения о компании или частном лице.
+                  </p>
                 </div>
-                </div>
-                 <div class="our_project_border">
-                   <h2 class="our_project_title"> Постер New Orlean vs Golden Stat </h2>
-                   <p class="our_project_text">Дизайн</p>
-                 </div></a>
-                </li>
+              </div>
+              <div class="our_project_border">
+                <h2 class="our_project_title">
+                  Постер New Orlean vs Golden Stat
+                </h2>
+                <p class="our_project_text">Дизайн</p>
+              </div>
+            </li>
 
-                <li class="our_project_item">
-                  <div class="our_project_description">
-                  <img
-                    src="images/img-3.jpg"
-                    alt="Ресторан Seafood"
-                    width="370"
-                    height="294"
-                  />
-                  <div class="our_project_overlay">
-                  <p class="our_project_description_text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+            <li class="our_project_item">
+              <div class="our_project_description">
+                <img
+                  src="images/img-3.jpg"
+                  alt="Ресторан Seafood"
+                  width="370"
+                  height="294"
+                />
+                <div class="our_project_overlay">
+                  <p class="our_project_description_text">
+                    Ресурс предлагает комплексные предложения с разным уровнем
+                    функционала и сервисов. Все это позволит посетителю получить
+                    исчерпывающие сведения о компании или частном лице.
+                  </p>
                 </div>
-                </div>
-                <div class="our_project_border">
-                  <h2 class="our_project_title">Ресторан Seafood</h2>
-                  <p class="our_project_text">Приложение</p>
-                </div></a>
-                </li>
+              </div>
+              <div class="our_project_border">
+                <h2 class="our_project_title">Ресторан Seafood</h2>
+                <p class="our_project_text">Приложение</p>
+              </div>
+            </li>
 
-                <li class="our_project_item">
-                  <div class="our_project_description">
-                  <img
-                    src="images/img-4.jpg"
-                    alt="Проект Prime"
-                    width="370"
-                    height="294"
-                    />
-                  <div class="our_project_overlay">
-                  <p class="our_project_description_text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+            <li class="our_project_item">
+              <div class="our_project_description">
+                <img
+                  src="images/img-4.jpg"
+                  alt="Проект Prime"
+                  width="370"
+                  height="294"
+                />
+                <div class="our_project_overlay">
+                  <p class="our_project_description_text">
+                    Ресурс предлагает комплексные предложения с разным уровнем
+                    функционала и сервисов. Все это позволит посетителю получить
+                    исчерпывающие сведения о компании или частном лице.
+                  </p>
                 </div>
-                </div>
-                  <div class="our_project_border">
-                    <h2 class="our_project_title">Проект Prime</h2>
-                    <p class="our_project_text">Маркетинг</p>
-                  </div></a>
-                </li>
-              
+              </div>
+              <div class="our_project_border">
+                <h2 class="our_project_title">Проект Prime</h2>
+                <p class="our_project_text">Маркетинг</p>
+              </div>
+            </li>
 
-                <li class="our_project_item">
-                  <div class="our_project_description">
-                    <img
-                      src="images/img-5.jpg"
-                      alt="Проект Boxes"
-                      width="370"
-                      height="294"
-                    />
-                     <div class="our_project_overlay">
-                      <p class="our_project_description_text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
-                     </div>
-                     </div>
-                    <div class="our_project_border">
-                      <h2 class="our_project_title">Проект Boxes</h2>
-                      <p class="our_project_text">Приложение</p>
-                    </div></a>
-                </li>
+            <li class="our_project_item">
+              <div class="our_project_description">
+                <img
+                  src="images/img-5.jpg"
+                  alt="Проект Boxes"
+                  width="370"
+                  height="294"
+                />
+                <div class="our_project_overlay">
+                  <p class="our_project_description_text">
+                    Ресурс предлагает комплексные предложения с разным уровнем
+                    функционала и сервисов. Все это позволит посетителю получить
+                    исчерпывающие сведения о компании или частном лице.
+                  </p>
+                </div>
+              </div>
+              <div class="our_project_border">
+                <h2 class="our_project_title">Проект Boxes</h2>
+                <p class="our_project_text">Приложение</p>
+              </div>
+            </li>
 
-            
-                <li class="our_project_item">
-                  <div class="our_project_description">
-                  <img
-                    src="images/img-6.jpg"
-                    alt="Inspiration has no Borders"
-                    width="370"
-                    height="294"
-                  />
-                  <div class="our_project_overlay">
-                  <p class="our_project_description_text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+            <li class="our_project_item">
+              <div class="our_project_description">
+                <img
+                  src="images/img-6.jpg"
+                  alt="Inspiration has no Borders"
+                  width="370"
+                  height="294"
+                />
+                <div class="our_project_overlay">
+                  <p class="our_project_description_text">
+                    Ресурс предлагает комплексные предложения с разным уровнем
+                    функционала и сервисов. Все это позволит посетителю получить
+                    исчерпывающие сведения о компании или частном лице.
+                  </p>
                 </div>
-                </div>
-                  <div class="our_project_border">
-                    <h2 class="our_project_title">Inspiration has no Borders</h2>
-                    <p class="our_project_text">Веб-сайт</p>
-                  </div></a>
-                </li>
+              </div>
+              <div class="our_project_border">
+                <h2 class="our_project_title">Inspiration has no Borders</h2>
+                <p class="our_project_text">Веб-сайт</p>
+              </div>
+            </li>
 
-                <li class="our_project_item">
-                  <div class="our_project_description">
-                  <img
-                    src="images/img-7.jpg"
-                    alt="Издание Limited Edition"
-                    width="370"
-                    height="294"
-                  />
-                  <div class="our_project_overlay">
-                  <p class="our_project_description_text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+            <li class="our_project_item">
+              <div class="our_project_description">
+                <img
+                  src="images/img-7.jpg"
+                  alt="Издание Limited Edition"
+                  width="370"
+                  height="294"
+                />
+                <div class="our_project_overlay">
+                  <p class="our_project_description_text">
+                    Ресурс предлагает комплексные предложения с разным уровнем
+                    функционала и сервисов. Все это позволит посетителю получить
+                    исчерпывающие сведения о компании или частном лице.
+                  </p>
                 </div>
-                </div>
-                  <div class="our_project_border">
-                    <h2 class="our_project_title">Издание Limited Edition</h2>
-                    <p class="our_project_text">Дизайн</p>
-                  </div></a>
+              </div>
+              <div class="our_project_border">
+                <h2 class="our_project_title">Издание Limited Edition</h2>
+                <p class="our_project_text">Дизайн</p>
+              </div>
+            </li>
 
-                </li>
+            <li class="our_project_item">
+              <div class="our_project_description">
+                <img
+                  src="images/img-8.jpg"
+                  alt="Проект LAB"
+                  width="370"
+                  height="294"
+                />
+                <div class="our_project_overlay">
+                  <p class="our_project_description_text">
+                    Ресурс предлагает комплексные предложения с разным уровнем
+                    функционала и сервисов. Все это позволит посетителю получить
+                    исчерпывающие сведения о компании или частном лице.
+                  </p>
+                </div>
+              </div>
+              <div class="our_project_border">
+                <h2 class="our_project_title">Проект LAB</h2>
+                <p class="our_project_text">Маркетинг</p>
+              </div>
+            </li>
 
-                <li class="our_project_item">
-                  <div class="our_project_description">
-                  <img
-                    src="images/img-8.jpg"
-                    alt="Проект LAB"
-                    width="370"
-                    height="294"
-                  />
-                  <div class="our_project_overlay">
-                  <p class="our_project_description_text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
+            <li class="our_project_item">
+              <div class="our_project_description">
+                <img
+                  src="images/img-9.jpg"
+                  alt="Growing Business"
+                  width="370"
+                  height="294"
+                />
+                <div class="our_project_overlay">
+                  <p class="our_project_description_text">
+                    Ресурс предлагает комплексные предложения с разным уровнем
+                    функционала и сервисов. Все это позволит посетителю получить
+                    исчерпывающие сведения о компании или частном лице.
+                  </p>
                 </div>
-                </div>
-                  <div class="our_project_border">
-                    <h2 class="our_project_title">Проект LAB</h2>
-                    <p class="our_project_text">Маркетинг</p>
-                  </div></a>
-                </li>
-
-                <li class="our_project_item">
-                   <div class="our_project_description">
-                  <img
-                    src="images/img-9.jpg"
-                    alt="Growing Business"
-                    width="370"
-                    height="294"
-                  />
-                  <div class="our_project_overlay">
-                  <p class="our_project_description_text">Ресурс предлагает комплексные предложения с разным уровнем функционала и сервисов. Все это позволит посетителю получить исчерпывающие сведения о компании или частном лице.</p>
-                </div>
-                </div>
-                  <div class="our_project_border">
-                    <h2 class="our_project_title">Growing Business</h2>
-                    <p class="our_project_text">Приложение</p>
-                  </div></a>
-                </li>
+              </div>
+              <div class="our_project_border">
+                <h2 class="our_project_title">Growing Business</h2>
+                <p class="our_project_text">Приложение</p>
+              </div>
+            </li>
           </ul>
         </div>
       </section>
@@ -269,7 +315,10 @@
                 >
               </li>
               <li class="mail_tel_item">
-                <a class="mail_tel_link link" lang="en" href="mailto:info@devstudio.com"
+                <a
+                  class="mail_tel_link link"
+                  lang="en"
+                  href="mailto:info@devstudio.com"
                   >info@example.com</a
                 >
               </li>
