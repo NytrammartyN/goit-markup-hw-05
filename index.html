@@ -77,7 +77,9 @@
       <section class="section_Hero">
         <div class="container">
           <h1 class="section_Hero_title">эффективное решение для бизнеса</h1>
-          <button class="bttn" type="button">Заказать услугу</button>
+          <button class="bttn" type="button" data-modal-open>
+            Заказать услугу
+          </button>
         </div>
       </section>
       <!-- CREDO sect -->
@@ -140,13 +142,14 @@
           </ul>
         </div>
       </section>
-      <!--What are we doing sect-->
+      <!--What are we doing-->
       <section class="we_section">
         <div class="container">
           <h2 class="we_text">Чем мы занимаемся</h2>
           <ul class="we_list list">
             <li class="we_item">
               <img src="images/img.jpg" alt="PC" width="370" height="294" />
+              <p class="work_text">Десктопные приложения</p>
             </li>
             <li class="we_item">
               <img
@@ -155,9 +158,11 @@
                 width="370"
                 height="294"
               />
+              <p class="work_text">Мобильные приложения</p>
             </li>
             <li class="we_item">
               <img src="images/img2.jpg" alt="PAD" width="370" height="294" />
+              <p class="work_text">Дизайнерские решения</p>
             </li>
           </ul>
         </div>
@@ -487,5 +492,16 @@
         </div>
       </div>
     </footer>
+    <!-- Modal window -->
+    <div class="backdrop is-hidden" data-modal>
+      <div class="modal">
+        <button type="button" class="close_btn" data-modal-close>
+          <svg class="modal_icon_button" width="11" height="11">
+            <use href="./images/icons.svg#close"></use>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
