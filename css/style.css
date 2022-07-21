@@ -325,7 +325,7 @@ img {
   font-size: 18px;
   line-height: 1.56;
 
-  color: var(--white-text-color);
+  color: var(--main-background-color);
 }
 
 .our_project_border {
