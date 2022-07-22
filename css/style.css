@@ -18,6 +18,9 @@
   --adress-color: #ffffff99;
   --credo-color: #e5e5e5;
   --hover-color: #188ce8;
+  --social-link: #afb1b8;
+
+  --trancition-timing: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .body {
   font-family: var(--main-font);
@@ -133,7 +136,7 @@ img {
   display: flex;
   align-items: center;
 
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color var(--trancition-timing);
 }
 .contact_icon {
   margin-right: 10px;
@@ -224,8 +227,8 @@ img {
   color: var(--main-background-color);
   background-color: var(--accent-text-color);
 
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color var(--trancition-timing),
+    color var(--trancition-timing);
 }
 
 .bttn:hover,
@@ -267,9 +270,8 @@ img {
 
   border-radius: 4px;
 
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color var(--trancition-timing),
+    color var(--trancition-timing), box-shadow var(--trancition-timing3);
 }
 
 .bttns:hover,
@@ -287,11 +289,7 @@ img {
 }
 .our_project_item {
   margin: 15px;
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.our_project_item:hover .our_project_overlay {
-  transform: translateY(0);
+  transition: transform var(--trancition-timing);
 }
 
 .our_project_description {
@@ -312,7 +310,7 @@ img {
   background-color: rgba(33, 150, 243, 0.9);
 
   transform: translateY(100%);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform var(--trancition-timing);
 }
 
 .our_project_description_text {
@@ -328,11 +326,24 @@ img {
   color: var(--main-background-color);
 }
 
+.our_project_link {
+  display: block;
+}
+.our_project_link:hover .our_project_overlay,
+.our_project_link:focus .our_project_overlay {
+  transform: translateY(0);
+}
+
+.our_project_link:hover,
+.our_project_link:focus {
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+
 .our_project_border {
   border: 1px solid #eeeeee;
-  border-top: transparent;
+  border-top: none;
   padding: 20px 24px;
-  margin-top: -3px;
 }
 
 .our_project_title {
@@ -444,16 +455,19 @@ img {
 
 .work_text {
   width: 100%;
+  height: 70px;
   position: absolute;
   bottom: 0;
   left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-  padding: 27px 0px;
+  /* padding: 27px 0px; */
 
-  font-weight: bold;
-  font-size: 14px;
+  font-weight: 700;
   line-height: 1.14;
-  text-align: center;
+  /* text-align: center; */
   text-transform: uppercase;
 
   color: var(--main-background-color);
@@ -533,13 +547,13 @@ img {
   height: 44px;
   display: flex;
   border-radius: 50%;
-  color: #afb1b8;
+  color: var(--social-link);
   background-color: var(--main-background-color);
   justify-content: center;
   align-items: center;
 
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: background-color var(--trancition-timing),
+    color var(--trancition-timing);
 }
 
 .team-social-link:hover,
@@ -584,15 +598,15 @@ img {
   width: 170px;
   height: 90px;
   display: flex;
-  border: 1px solid #afb1b8;
+  border: 1px solid var(--social-link);
   border-radius: 4px;
-  color: #afb1b8;
+  color: var(--social-link);
   background-color: var(--main-background-color);
   justify-content: center;
   align-items: center;
 
-  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color var(--trancition-timing),
+    color var(--trancition-timing);
 }
 
 .client_link:hover,
@@ -678,7 +692,7 @@ img {
   font-size: 14px;
   line-height: 1.71;
 
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color var(--trancition-timing);
 }
 .mail_tel_link:hover,
 .mail_tel_link:focus {
@@ -686,7 +700,7 @@ img {
 }
 
 .mail_tel_link {
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: color var(--trancition-timing);
 }
 
 .footer .container {
@@ -727,6 +741,7 @@ img {
   background-color: #ffffff10;
   align-items: center;
   justify-content: center;
+  transition: background-color var(--trancition-timing);
 }
 
 .footer_social_link:hover,
@@ -753,8 +768,8 @@ img {
   background-color: rgba(0, 0, 0, 0.2);
 
   top: 0;
-  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
-    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: opacity var(--trancition-timing),
+    visibility var(--trancition-timing);
 }
 
 .backdrop.is-hidden {
@@ -778,7 +793,7 @@ img {
 
   position: relative;
   transform: scale(1);
-  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: transform var(--trancition-timing);
 }
 .close_btn {
   position: absolute;
